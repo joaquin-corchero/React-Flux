@@ -1,23 +1,24 @@
 {
-  "ecmaFeatures": {
-    "jsx": true
-  },
-  "env": {
-    "browser": true,
-    "node": true,
-    "jquery": true
-  },
-  "rules": {
-    "quotes": 0,
-    "no-trailing-spaces": 0,
-    "eol-last": 0,
+	"extends": "eslint:recommended",
+	"rules": {
+		"no-alert": 0,
+		"no-bitwise": 0,
+		"camelcase": 1,
+		"curly": 1,
+		"eqeqeq": 0,
+		"no-eq-null": 0,
+		"guard-for-in": 1,
+		"no-empty": 1,
     "no-unused-vars": 0,
-    "no-underscore-dangle": 0,
-    "no-alert": 0,
-    "no-lone-blocks": 0,
-  },
-  "globals": {
+		"no-undef": 1,
+	},
+	"globals": {
     "jQuery": true,
     $: true
-  }
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+    "jquery": true
+	}
 }
